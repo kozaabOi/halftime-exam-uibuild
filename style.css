@@ -88,6 +88,7 @@ button {
 }
 
 @media only screen and (max-width: 640px) {
+  
   input, textarea {
     width: calc(100% - 40px);
   }
