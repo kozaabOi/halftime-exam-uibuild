@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #C0EBF9;
+  color: #467745;
+}
+
+form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #467745;
+}
+
+input[type="text"], textarea {
+  padding: 20px;
+  border: 0;
+  max-width: 600px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 64px;
+}
+
+textarea {
+  height: 120px;
+}
+
+::placeholder {
+  color: #467745;
+  font-size: 16px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+form {
+  background-color: inherit;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+}
+
+form div input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+form div p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button {
+  width: 280px;
+  height: 80px;
+  background-color: #467745;
+  color: #C0EBF9;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin: 0 auto;
+  align-self: center;
+  border: 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 640px) {
+  form {
+    margin: 20px;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  input, textarea {
+    width: 100%;
+    width: calc(100% - 40px);
+  }
+
+  button {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
