@@ -88,21 +88,7 @@ button {
 }
 
 @media only screen and (max-width: 640px) {
-  form {
-    margin: 20px;
-  }
-
-  h1 {
-    text-align: left;
-  }
-
   input, textarea {
-    width: 100%;
     width: calc(100% - 40px);
-  }
-
-  button {
-    width: 100%;
-    margin: 20px 0;
   }
 }
